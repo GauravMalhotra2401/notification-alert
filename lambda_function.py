@@ -10,7 +10,7 @@ def lambda_handler(event, context):
 
     print(event)
     try:
-        s3_bucket_name = event['Records'][0]['s3']['bukcet']['name']
+        s3_bucket_name = event['Records'][0]['s3']['bucket']['name']
         s3_object_key = event['Records'][0]['s3']['object']['key']
         print(s3_bucket_name)
         print(s3_object_key)
